@@ -1,1 +1,20 @@
-/*  your css code here. If applicable */
+
+.panel{
+	flex-shrink:1;
+	width:10%;
+	height:250px;
+	border-radius:30px;
+}
+.container{
+	display:flex;
+	gap:10px;
+}
+#panel-5{
+	flex-grow:1;
+}
+.container > img:hover{
+	flex-grow:1;
+}
+.container > img:hover~ #panel-5{
+	flex-grow:0;
+}
